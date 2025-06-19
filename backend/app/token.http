@@ -1,0 +1,28 @@
+
+
+POST http://localhost:8000/api/token/ HTTP/1.1
+Content-Type: application/json
+
+
+{
+    "username": "kingship",
+    "password": "kingship"
+}
+
+#######
+
+POST http://localhost:8000/create/ HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU4MDkxODA4LCJpYXQiOjE3NTAzMTU4MDgsImp0aSI6ImY3NzI2MWYxNzEyMTQ2NTc4OGIyMTI3MzI3YTI2M2JhIiwidXNlcl9pZCI6MX0._McQ81-twDyNdtC71pTew7YYSMXqXXJqPR7-F5u7dbo
+
+{
+    "title": "title4",
+    "author": "author4",
+    "details": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, neque? Ut consequatur et unde aut expedita magni necessitatibus id cumque, odio enim nulla distinctio, neque, voluptatem at tempora culpa eius."
+}
+
+###
+
+GET http://localhost:8000 HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU4MDkxODA4LCJpYXQiOjE3NTAzMTU4MDgsImp0aSI6ImY3NzI2MWYxNzEyMTQ2NTc4OGIyMTI3MzI3YTI2M2JhIiwidXNlcl9pZCI6MX0._McQ81-twDyNdtC71pTew7YYSMXqXXJqPR7-F5u7dbo
